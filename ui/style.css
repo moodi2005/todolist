@@ -1,0 +1,149 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(45deg, rgba(68, 237, 234, 0.8), rgba(255, 165, 0, 0.8)); /* gradient background */
+  transition: background 5s ease; /* Smooth background color transition */
+}
+
+/* Header */
+header {
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #444;
+}
+
+/* Checklist container */
+.checklist-container {
+  background: #ffffffcc;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Task input form */
+.task-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.task-input input:focus {
+  border-color: #fed6e3;
+}
+
+.task-input button {
+  background: #a8edea;
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.task-input button:hover {
+  background: #85d3d9;
+}
+
+/* Task list styling */
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.task-item.completed {
+  background: #d4edda;
+  text-decoration: line-through;
+}
+
+.task-item:hover {
+  background: #f8f9fa;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Action buttons */
+.task-actions {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.task-actions .edit:hover {
+  color: #ffc107;
+}
+
+.task-actions .delete:hover {
+  color: #dc3545;
+}
+
+.task-actions .complete:hover {
+  color: #28a745;
+}
+
+/* Button styles */
+button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+button:hover {
+  background-color: #45a049;
+}

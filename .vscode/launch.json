@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C++ File",
+            "type": "shell",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-std=gnu++14",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Build a C++ file using Clang++"
+        }
+    ]
+}
+
